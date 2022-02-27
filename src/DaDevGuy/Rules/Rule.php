@@ -28,6 +28,7 @@ class Rule extends PluginBase {
             }
             return true;
         }
+        return false;
     }
     public function rules($player) {
                 $form =  new SimpleForm(function(Player $player, int $data =  null){
