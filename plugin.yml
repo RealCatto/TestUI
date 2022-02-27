@@ -1,0 +1,15 @@
+name: RulesUI
+version: 1.0.0
+api: [4.0.0]
+author: DaDevGuy
+main: DaDevGuy\Rules\Rule
+
+commands:
+   rules:
+    description: "To Open Rules UI"
+    usage: "/rules"
+    permission: rules.ui.cmd
+
+permissions:
+  rules.ui.cmd:
+   default: true
