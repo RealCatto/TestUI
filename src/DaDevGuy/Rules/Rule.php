@@ -15,6 +15,11 @@ use pocketmine\Server;
 
 
 class Rule extends PluginBase {
+    public function onEnable(): void {
+    @mkdir($this->getDataFolder());
+    $this->saveDefaultConfig();
+    $this->getResources("config.yml");
+    }
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
         if($cmd->getName() == "rules") {
             if($sender instanceof Player) {
@@ -40,7 +45,7 @@ class Rule extends PluginBase {
                 });
                 $name = $player->getName();
                 $form->setTitle("§c§lRules!");
-                $form->setContent("§dHello, §a$name\n\n§9Read These Rules Before Playing:\n§2» §7Don't Use Toolbox\n§2» §7Join Our Discord Server\n§2» §7If You Found Any Bug So Report Us In Discord\n§2» §7Don't Spam In Chat\n§2» §7Nether And Come In Future\n§2» §7Put Items One By One For Craft In Work Bench\n§2» §7Type /recipes For See Custom Recipes Book\n§2» §7Vote Our Server To Get OP Rewards\n§2» §7Don't Abuse Anyone\n§2» §7Live Like A Family In Server\n§2» §7Use Fast-Travel To Travel\n§2» §7Type /kit For Claiming Free Kits\n§2» §7Purchase Ranks In our Discord Server\n\n§cFollow That Rules And See Full Info And After Enjoy Our Server!");
+                $form->setContent($this->getConfig()->get("rules"));
                 $form->addButton("§6§lI Agree!", 0, "textures/ui/realms_slot_check");
                 $form->sendToPlayer($player);
                 return $form;
