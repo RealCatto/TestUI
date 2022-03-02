@@ -5,6 +5,7 @@ A plugin that will show your server rules in UI form. To open RulesUI, simply ty
 - Use `$player` to display player name
 - Use `§` as formatting codes
 - Use `\n` to break into a new line
+- Added Config So You Can Customize Rules
 - Change command description to suit your server
 
 # How to Install
