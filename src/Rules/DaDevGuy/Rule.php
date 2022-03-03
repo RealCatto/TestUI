@@ -1,6 +1,6 @@
 <?php
 
-namespace DaDevGuy\Rules;
+namespace Rules\DaDevGuy;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
