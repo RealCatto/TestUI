@@ -2,7 +2,7 @@ name: RulesUI
 version: 1.0.1
 api: [4.0.0]
 author: DaDevGuy
-main: DaDevGuy\Rules\Rule
+main: Rules\DaDevGuy\Rule
 
 commands:
    rules:
