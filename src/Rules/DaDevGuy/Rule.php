@@ -15,7 +15,7 @@ class Rule extends PluginBase {
     public function onEnable(): void {
     @mkdir($this->getDataFolder());
     $this->saveDefaultConfig();
-    $this->getResources("config.yml");
+    $this->getResource("config.yml");
     }
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
         if($cmd->getName() == "rules") {
