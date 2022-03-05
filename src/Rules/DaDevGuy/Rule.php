@@ -6,7 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
-use DaDevGuy\Rules\libs\jojoe77777\FormAPI\SimpleForm;
+use Rules\DaDevGuy\libs\jojoe77777\FormAPI\SimpleForm;
 
 use pocketmine\player\Player;
 use pocketmine\Server;
