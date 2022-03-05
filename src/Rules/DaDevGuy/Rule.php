@@ -11,9 +11,6 @@ use DaDevGuy\Rules\libs\jojoe77777\FormAPI\SimpleForm;
 use pocketmine\player\Player;
 use pocketmine\Server;
 
-
-
-
 class Rule extends PluginBase {
     public function onEnable(): void {
     @mkdir($this->getDataFolder());
