@@ -8,8 +8,8 @@ commands:
    rules:
     description: "To Open Rules UI"
     usage: "/rules"
-    permission: rules.ui.cmd
+    permission: rulesui.cmd
 
 permissions:
-  rules.ui.cmd:
+  rulesui.cmd:
    default: true
