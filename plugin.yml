@@ -1,15 +1,15 @@
-name: RulesUI
+name: TestUI
 version: 1.0.1
 api: [4.0.0]
 author: DaDevGuy
 main: Rules\DaDevGuy\Rule
 
 commands:
-   rules:
+   test:
     description: "To Open Rules UI"
-    usage: "/rules"
-    permission: rulesui.cmd
+    usage: "/test"
+    permission: testui.cmd
 
 permissions:
-  rulesui.cmd:
+  testui.cmd:
    default: true
